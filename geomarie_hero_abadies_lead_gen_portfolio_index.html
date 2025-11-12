@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Geomarie Hero B. Abadies — Lead Generation Specialist</title>
+  <meta name="description" content="Portfolio of Geomarie Hero B. Abadies — Lead Generation Specialist. LinkedIn prospecting, list building, email outreach, calendar management, CRM, B2B appointment setting." />
+  <style>
+    :root{
+      --bg:#0f1724; /* deep navy */
+      --card:#0b1220;
+      --muted:#9aa4b2;
+      --accent:#38bdf8; /* cyan */
+      --glass: rgba(255,255,255,0.03);
+      --radius:16px;
+      --maxw:1100px;
+      font-family: Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#071021 0%, #081426 100%);
+      color:#e6eef6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:32px 20px;
+      display:flex;justify-content:center;
+    }
+    .wrap{
+      width:100%;max-width:var(--maxw);
+      display:grid;grid-template-columns: 360px 1fr;gap:28px;align-items:start;
+    }
+    @media (max-width:900px){.wrap{grid-template-columns:1fr} .left{order:2}.right{order:1}}
+
+    /* left column */
+    .card{background:var(--card);border-radius:var(--radius);padding:22px;box-shadow:0 8px 30px rgba(2,6,23,0.6);}
+    .avatar{width:100%;height:260px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;color:#021025;font-weight:700;font-size:26px}
+    .name{font-size:20px;margin-top:14px;font-weight:700}
+    .title{color:var(--muted);margin-top:6px;font-size:13px}
+    .contact{margin-top:14px;font-size:14px}
+    .contact a{color:var(--accent);text-decoration:none}
+    .section-title{font-size:12px;color:var(--muted);text-transform:uppercase;margin-top:18px}
+    .skill-badge{display:inline-block;background:var(--glass);padding:6px 10px;border-radius:999px;margin:6px 6px 6px 0;font-size:13px;color:var(--muted)}
+
+    /* right column */
+    .hero{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:28px;border-radius:var(--radius)}
+    .intro{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+    .intro-left{max-width:68%}
+    .intro h1{margin:0;font-size:22px}
+    .intro p{color:var(--muted);margin-top:10px;line-height:1.45}
+    .cta{display:flex;gap:10px;margin-top:14px}
+    .btn{background:linear-gradient(90deg,var(--accent),#60a5fa);padding:10px 14px;border-radius:10px;color:#021025;font-weight:700;border:none;cursor:pointer}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--accent)}
+
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+    .experience .job{padding:14px;background:var(--glass);border-radius:12px;margin-bottom:12px}
+    .job h4{margin:0;font-size:15px}
+    .job .meta{font-size:13px;color:var(--muted);margin-top:6px}
+    .job ul{margin:10px 0 0 18px;color:var(--muted);font-size:14px}
+
+    .projects{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin-top:18px}
+    .project{background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);padding:12px;border-radius:12px}
+    .project p{color:var(--muted);font-size:14px}
+
+    footer{margin-top:18px;color:var(--muted);font-size:13px}
+
+    /* tiny editor bar */
+    .editor-toggle{position:fixed;right:18px;bottom:18px;background:#0b1220;border-radius:999px;padding:10px;border:1px solid rgba(255,255,255,0.04);cursor:pointer}
+    .save-indicator{font-size:12px;color:var(--muted);margin-left:8px}
+
+    /* form */
+    .contact-form{display:flex;flex-direction:column;gap:8px}
+    .contact-form input,.contact-form textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:inherit}
+
+    /* small helpers */
+    .muted{color:var(--muted)}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.02);font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <aside class="left card">
+      <div class="avatar" id="avatar">GH</div>
+      <div class="name" id="name">Geomarie Hero B. Abadies</div>
+      <div class="title" id="title">Lead Generation Specialist</div>
+
+      <div class="section-title">Profile</div>
+      <p class="muted" id="profile">Highly motivated and results-driven professional with over 9 years of experience in sales and marketing. Proven track record in developing effective lead-generation strategies, managing CRM systems, and improving conversion rates. Adept at leveraging data analytics to optimize campaign performance and boost sales. Looking forward to utilizing my expertise in driving business growth and enhancing customer acquisition for a progressive organization.</p>
+
+      <div class="section-title">Contact</div>
+      <div class="contact">
+        <div>📍 <span id="location">Davao City, Philippines</span></div>
+        <div>📱 <a href="tel:+639060231662" id="phone">+63 906 023 1662</a></div>
+        <div>✉️ <a href="mailto:heroabadies30@gmail.com" id="email">heroabadies30@gmail.com</a></div>
+        <div>🔗 <a href="https://linkedin.com/in/heroabadies30" target="_blank" id="linkedin">live:heroabadies30</a></div>
+      </div>
+
+      <div class="section-title">Core Skills</div>
+      <div id="skills">
+        <span class="skill-badge">LinkedIn prospecting</span>
+        <span class="skill-badge">List building</span>
+        <span class="skill-badge">Email outreach</span>
+        <span class="skill-badge">B2B cold calling</span>
+        <span class="skill-badge">Calendar management</span>
+        <span class="skill-badge">Social media prospecting</span>
+        <span class="skill-badge">CRM & data mining</span>
+      </div>
+
+      <div class="section-title">Education</div>
+      <div class="muted">B.S. Business Administration — University of Southeastern Philippines (2010–2014)</div>
+    </aside>
+
+    <main class="right">
+      <div class="hero card">
+        <div class="intro">
+          <div class="intro-left">
+            <h1 id="headline">Lead generation that converts — from prospecting to calendar-booked meetings</h1>
+            <p id="blurb">I specialize in building targeted lists, running personalised email outreach and LinkedIn prospecting campaigns, and scheduling qualified 1:1 meetings. I’ve worked with startups and SMBs to increase pipeline velocity and improve conversion rates through data-driven outreach and hands-on calendar management.</p>
+
+            <div class="cta">
+              <button class="btn" id="contactBtn">Contact Me</button>
+              <button class="btn ghost" id="downloadBtn">Download CV</button>
+            </div>
+          </div>
+          <div style="text-align:right;min-width:150px">
+            <div class="pill">Open to: Contract & Full-time</div>
+            <div style="margin-top:12px;color:var(--muted);font-size:13px">Availability: Immediately</div>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div>
+            <div class="section-title">Experience</div>
+            <div class="experience">
+              <div class="job" id="job1">
+                <h4>Lead Generation Specialist — Formicidae LLC</h4>
+                <div class="meta">January 2023 — September 2025</div>
+                <ul>
+                  <li>Built and qualified B2B prospect lists using LinkedIn and data-mining tools.</li>
+                  <li>Managed email sequences and calendar booking — averaged X meetings/month (replace with your metric).</li>
+                  <li>Worked closely with CEO and sales team to refine ICP and outreach scripts.</li>
+                </ul>
+              </div>
+
+              <div class="job" id="job2">
+                <h4>Lead Generation Specialist — Uniqli SEO Company</h4>
+                <div class="meta">October 2019 — November 2022</div>
+                <ul>
+                  <li>B2B cold calling and appointment setting for SEO services.</li>
+                  <li>Managed CRM, email marketing, and social media prospecting.</li>
+                </ul>
+              </div>
+
+              <div class="job" id="job3">
+                <h4>Executive Virtual Assistant / Business Marketing Manager — Cohere Commerce</h4>
+                <div class="meta">June 2016 — August 2019</div>
+                <ul>
+                  <li>Supported marketing operations, email campaigns, and administrative tasks.</li>
+                  <li>Handled direct updates and coordination with CEO for project delivery.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="section-title">Selected Projects</div>
+            <div class="projects">
+              <div class="project" contenteditable="true">
+                <strong>LinkedIn Prospecting Campaign — SaaS</strong>
+                <p>Built a targeted prospect list, personalized outreach sequences, and booked discovery calls for the sales team. Outcome: increased qualified leads (replace with metrics).</p>
+              </div>
+
+              <div class="project" contenteditable="true">
+                <strong>Email Outreach Automation — eCommerce</strong>
+                <p>Deployed segmented email sequences that improved reply rate and lead-to-demo conversion (replace with metrics).</p>
+              </div>
+
+              <div class="project" contenteditable="true">
+                <strong>Cold Calling & Appointment Setting</strong>
+                <p>High-volume outreach to priority accounts; coordinated calendars and onboarding for new clients.</p>
+              </div>
+            </div>
+
+            <div class="section-title" style="margin-top:12px">Tools & Platforms</div>
+            <div style="margin-top:8px">
+              <span class="skill-badge">LinkedIn Sales Navigator</span>
+              <span class="skill-badge">HubSpot / Pipedrive</span>
+              <span class="skill-badge">Mailshake / Lemlist</span>
+              <span class="skill-badge">Phantombuster / Apollo</span>
+              <span class="skill-badge">Google Workspace</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:18px">
+          <div class="section-title">Contact</div>
+          <form class="contact-form" onsubmit="return submitContact(event)">
+            <input type="text" id="cf-name" placeholder="Your name" required>
+            <input type="email" id="cf-email" placeholder="Your email" required>
+            <textarea id="cf-msg" rows="4" placeholder="Message"></textarea>
+            <div style="display:flex;gap:10px;align-items:center">
+              <button type="submit" class="btn">Send message</button>
+              <div id="cf-status" class="muted"></div>
+            </div>
+          </form>
+        </div>
+
+        <footer class="muted">Designed & maintained by Geomarie Hero B. Abadies — editable on the page. Use the edit toggle to save content to your browser.</footer>
+      </div>
+    </main>
+  </div>
+
+  <button class="editor-toggle" id="editorToggle">✏️ Edit<span class="save-indicator" id="saveIndicator"></span></button>
+
+  <script>
+    // -- Basic edit/save functionality (localStorage) --
+    const stateKey = 'geomarie_portfolio_v1';
+    const saveIndicator = document.getElementById('saveIndicator');
+    const editorToggle = document.getElementById('editorToggle');
+    let editing = false;
+
+    function setEditable(flag){
+      document.querySelectorAll('[contenteditable], #name, #title, #profile, #headline, #blurb, #phone, #email, #linkedin').forEach(el=>{
+        el.contentEditable = flag;
+        if(flag){ el.style.outline = '2px dashed rgba(56,189,248,0.12)'; }
+        else{ el.style.outline = 'none'; }
+      });
+      // make project cards editable when editing enabled
+      document.querySelectorAll('.project').forEach(p=> p.contentEditable = flag);
+    }
+
+    editorToggle.addEventListener('click', ()=>{
+      editing = !editing;
+      setEditable(editing);
+      editorToggle.textContent = editing ? '💾 Save' : '✏️ Edit';
+      if(!editing) saveToLocal();
+    });
+
+    function gatherData(){
+      return {
+        name: document.getElementById('name').innerText,
+        title: document.getElementById('title').innerText,
+        profile: document.getElementById('profile').innerText,
+        headline: document.getElementById('headline').innerText,
+        blurb: document.getElementById('blurb').innerText,
+        phone: document.getElementById('phone').innerText,
+        email: document.getElementById('email').innerText,
+        linkedin: document.getElementById('linkedin').innerText,
+        projects: Array.from(document.querySelectorAll('.project')).map(p=>p.innerHTML)
+      }
+    }
+    function saveToLocal(){
+      try{
+        localStorage.setItem(stateKey, JSON.stringify(gatherData()));
+        saveIndicator.textContent = 'Saved';
+        setTimeout(()=> saveIndicator.textContent = '', 2000);
+      }catch(e){ console.warn('Could not save',e); saveIndicator.textContent = 'Save failed' }
+    }
+    function loadFromLocal(){
+      try{
+        const raw = localStorage.getItem(stateKey); if(!raw) return;
+        const d = JSON.parse(raw);
+        if(d.name) document.getElementById('name').innerText = d.name;
+        if(d.title) document.getElementById('title').innerText = d.title;
+        if(d.profile) document.getElementById('profile').innerText = d.profile;
+        if(d.headline) document.getElementById('headline').innerText = d.headline;
+        if(d.blurb) document.getElementById('blurb').innerText = d.blurb;
+        if(d.phone) document.getElementById('phone').innerText = d.phone;
+        if(d.email) document.getElementById('email').innerText = d.email;
+        if(d.linkedin) document.getElementById('linkedin').innerText = d.linkedin;
+        if(d.projects){
+          const nodes = document.querySelectorAll('.project');
+          d.projects.forEach((html,i)=>{ if(nodes[i]) nodes[i].innerHTML = html });
+        }
+      }catch(e){console.warn('Load failed',e)}
+    }
+
+    // contact form (opens user's email client as fallback)
+    function submitContact(e){
+      e.preventDefault();
+      const name = document.getElementById('cf-name').value;
+      const email = document.getElementById('cf-email').value;
+      const msg = document.getElementById('cf-msg').value;
+      const to = document.getElementById('email').innerText || 'heroabadies30@gmail.com';
+      const subject = encodeURIComponent('Portfolio contact from ' + name);
+      const body = encodeURIComponent('From: ' + name + ' ('+email+')\n\n' + msg);
+      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+      document.getElementById('cf-status').innerText = 'Opening mail client...';
+      return false;
+    }
+
+    // download CV (simple approach)
+    document.getElementById('downloadBtn').addEventListener('click', ()=>{
+      const cvUrl = 'SEPTCV Lead Gen- Geomarie Hero Abadies.pdf';
+      // if hosted, replace with an absolute link. fallback: open mailto to request CV.
+      window.open(cvUrl, '_blank');
+    });
+
+    // Contact button quick scroll
+    document.getElementById('contactBtn').addEventListener('click', ()=>{
+      window.scrollTo({top: document.body.scrollHeight, behavior:'smooth'});
+    });
+
+    // initial load
+    loadFromLocal();
+
+    // Show initials in avatar based on name
+    (function setAvatar(){
+      const name = document.getElementById('name').innerText.trim();
+      const initials = name.split(' ').map(n=>n[0]).slice(0,2).join('').toUpperCase();
+      document.getElementById('avatar').innerText = initials;
+    })();
+
+    // allow pressing Ctrl+S to save when editing
+    window.addEventListener('keydown', (e)=>{
+      if((e.ctrlKey||e.metaKey) && e.key.toLowerCase() === 's'){
+        e.preventDefault(); saveToLocal();
+        editorToggle.textContent = '✏️ Edit'; editing=false; setEditable(false);
+      }
+    })
+  </script>
+</body>
+</html>
